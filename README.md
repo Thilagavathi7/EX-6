@@ -24,7 +24,6 @@ Step 7: Stop the program.
 ### PROGRAM :
 
 CLIENT:
-
 ```
 import socket
 from pythonping import ping
