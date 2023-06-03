@@ -37,10 +37,10 @@ while True:
         c.send(str(ping(hostname, verbose=False)).encode())
     except KeyError:
         c.send("Not Found".encode())
- ```
- SERVER:
- ```
- import socket
+```
+SERVER:
+```
+import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 while True:
@@ -48,6 +48,8 @@ while True:
     s.send(ip.encode())
     print(s.recv(1024).decode())
 ```
+
+
 ### OUTPUT :
 
 CLIENT:
